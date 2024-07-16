@@ -63,6 +63,9 @@ p,li{
 .nav-options p{
     cursor: pointer;
 }
+.hum-burger{
+    display: none;
+}
 
 /* banner */
 
@@ -140,6 +143,10 @@ input,select{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
+}
+.popular-section img{
+         width: 100%;
+         height: 100%;
 }
 .text-content{
     display: flex;
@@ -235,3 +242,55 @@ input,select{
     margin: 2rem 0;
 }
 
+
+
+/* responsive in mobile device */
+
+@media screen and (max-width:576px) {
+    .nav-options{
+        display: none;
+    }
+    .hum-burger{
+        display: block;
+    }
+    h3{
+        font-size: 25px;
+    }
+
+    .hum-burger i{
+        font-size: 26px;
+    }
+    .container{
+        margin: 3rem auto;
+
+    }
+    p{
+        font-size: 16px;
+
+    }
+
+    .explore-container h3{
+        font-size: 24px;
+
+    }
+    .explore-container p{
+        width: 60%;
+
+    }
+    .travel-input{
+        flex-direction: column;
+        width: 70%;
+        margin: auto;
+
+
+    }
+
+    .travel-input input, .travel-input select, .travel-input button{
+        width: 100%;
+        margin: 1rem 0;
+    }
+    .popular-section, .row-1, .row-2, .row-3{
+        grid-template-columns: 1fr;
+    }
+    
+}
